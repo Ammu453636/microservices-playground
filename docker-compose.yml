@@ -144,7 +144,7 @@ services:
     ports:
       - "10000:10000"
     environment: 
-      SPRING_CLOUD_CONFIG_URI: "http://10.11.12.116:8000"
+      SPRING_CLOUD_CONFIG_URI: "http://configserver:8000"
       SPRING_CLOUD_CONFIG_FAIL-FAST: "true"
       SPRING_PROFILES_ACTIVE: docker
       SPRING_APPLICATON_NAME: administration
@@ -160,7 +160,7 @@ services:
     ports:
       - "8070:8070"
     environment: 
-      SPRING_CLOUD_CONFIG_URI: "http://10.11.12.116:8000"
+      SPRING_CLOUD_CONFIG_URI: "http://configserver:8000"
       SPRING_CLOUD_CONFIG_FAIL-FAST: "true"
       SPRING_PROFILES_ACTIVE: docker
       SPRING_APPLICATON_NAME: gatewayservice
@@ -178,7 +178,7 @@ services:
     ports:
       - "8083:8083"
     environment: 
-      SPRING_CLOUD_CONFIG_URI: "http://10.11.12.116:8000"
+      SPRING_CLOUD_CONFIG_URI: "http://configserver:8000"
       SPRING_CLOUD_CONFIG_FAIL-FAST: "true"
       SPRING_PROFILES_ACTIVE: docker
       SPRING_APPLICATON_NAME: orderservice
@@ -197,7 +197,7 @@ services:
     ports:
       - "8084:8084"
     environment: 
-      SPRING_CLOUD_CONFIG_URI: "http://10.11.12.116:8000"
+      SPRING_CLOUD_CONFIG_URI: "http://configserver:8000"
       SPRING_CLOUD_CONFIG_FAIL-FAST: "true"
       SPRING_PROFILES_ACTIVE: docker
       SPRING_APPLICATON_NAME: paymentservice
@@ -216,7 +216,7 @@ services:
     ports:
       - "8085:8085"
     environment: 
-      SPRING_CLOUD_CONFIG_URI: "http://10.11.12.116:8000"
+      SPRING_CLOUD_CONFIG_URI: "http://configserver:8000"
       SPRING_CLOUD_CONFIG_FAIL-FAST: "true"
       SPRING_PROFILES_ACTIVE: docker
       SPRING_APPLICATON_NAME: deliveryservice
