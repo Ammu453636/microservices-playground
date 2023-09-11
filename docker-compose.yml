@@ -158,7 +158,7 @@ services:
       context: ./gatewayservice
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8070:8070"
     environment: 
       SPRING_CLOUD_CONFIG_URI: "http://configserver:8000"
       SPRING_CLOUD_CONFIG_FAIL-FAST: "true"
